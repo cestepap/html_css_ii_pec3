@@ -1,0 +1,62 @@
+.bands-grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+.bands-grid-item {
+  border: 5px solid #565656;
+  background-color: beige;
+  border-radius: 10px;
+  position: relative;
+  min-height: 600px;
+  padding: 0;
+  margin: 20px;
+}
+
+@supports (display: grid) {
+  .bands-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-gap: 50px;
+  }
+
+  .bands-grid-item {
+    margin: 0;
+  }
+}
+
+.bands-grid a {
+  border: none;
+  display: inherit;
+}
+
+.bands-grid-item img {
+  width: 100%;
+}
+
+.bands-grid-item h3 {
+  text-align: center;
+  padding: 20px;
+  font-size: 1.2em;
+  color: #222;
+  margin-bottom: 60px;
+}
+
+.bands-grid-item p {
+  text-align: center;
+  padding: 20px;
+  font-size: 1.4em;
+  font-weight: 800;
+  background: #14caba;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.bands-static-info {
+  background: rgba(169, 169, 169, 0.6);
+  margin: 50px auto 0;
+  padding: 50px;
+}

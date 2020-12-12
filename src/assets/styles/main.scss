@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+
+@import "./variables/_colors.scss";
+@import "./variables/_variables.scss";
+@import "./functions/_functions.scss";
+@import "./layout/_common.scss";
+@import "./pages/_index.scss";
+@import "./pages/_article.scss";
+@import "./pages/_bands.scss";
+@import "./pages/_contact";
+@import "@fortawesome/fontawesome-free/css/all.css";
+
+* {
+  box-sizing: border-box;
+}
+
+body,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 18px;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: $main-color;
+}
+
+img {
+  display: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto", sans-serif;
+  color: $main-color;
+  margin: 0;
+  word-break: break-word;
+  text-align: center;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 48px;
+  margin: 40px 0;
+}
+
+h2 {
+  margin-bottom: 0;
+  margin-top: 25px;
+  font-size: 1.3333333333333333rem;
+}
+
+h3 {
+  margin-bottom: 0;
+  margin-top: 25px;
+  font-size: 1.3333333333333333rem;
+  color: $header-background-color;
+}
+
+p {
+  color: #eee;
+  font-size: 1rem;
+  line-height: 1.4rem;
+  margin-top: 10px;
+}
+
+a {
+  color: $main-color;
+  text-decoration: none;
+
+  & a:hover {
+    transition: color 0.5 ease-out;
+    color: $hover-color;
+    text-decoration: none !important;
+  }
+}
+
+.grow {
+  & .grow:hover {
+    transform: scale(1.1);
+  }
+}
+
+@tailwind utilities;

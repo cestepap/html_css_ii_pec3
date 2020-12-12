@@ -1,0 +1,6 @@
+@function addfontaizevalue($increment) {
+  $defaultSize: 18;
+  $newSize: $defaultSize + $increment;
+
+  @return $newSize;
+}
