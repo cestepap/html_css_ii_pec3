@@ -10,10 +10,6 @@ ul {
   padding: 0;
 }
 
-img {
-  display: inline-flex;
-}
-
 html {
   font-size: 18px;
 }
@@ -104,6 +100,7 @@ a {
 .footer-logo img {
   width: 100px;
   border-radius: 30px;
+  display: inline-flex;
 }
 
 .header-menu-nav,
