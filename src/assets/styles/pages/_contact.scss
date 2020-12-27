@@ -15,8 +15,23 @@
 //   border: 1px solid $main-color;
 // }
 
-@layer components {
-  .input-contact {
-    @apply form-input mt-1 block w-full mb-5;
-  }
+@tailwind base;
+@tailwind components;
+
+.form-input {
+  color: black;
 }
+
+.input-contact {
+  @apply form-input mt-1 block w-full mb-5;
+}
+
+.label-contact {
+  @apply text-lg uppercase;
+}
+
+.button-contact {
+  @apply block bg-primary text-lg mx-auto p-2 rounded border-white text-white m-5;
+}
+
+@tailwind utilities;
